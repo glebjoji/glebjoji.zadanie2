@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Смирнова Мария 28/1 задание 2</title>
+</head>
+<body class="root">
+
+<header>
+    <nav>
+        <img src="logo.jpg" alt="Логотип" class="logo">
+        <h1>Jojikov</h1>
+        <ul>
+            <li class="nav1"><a href="#table" class="nav2">Таблица</a></li>
+            <li class="nav1"><a href="#form" class="nav2">Форма</a></li>
+        </ul>
+    </nav>
+
+</header>
+<main>
+<ul>
+    <li><a href="http://kubsu.ru/" target="_blank" >КубГУ</a></li>
+    <li><a href="https://kubsu.ru/" target="_blank" >КубГУ https</a> </li>
+    <li><a href="https://youtu.be/PAMbzvQQDJE?si=opDlDxteN2LeM3As" target="_blank">
+        <img src="cat1.jpg"  width="250" height="250" alt="хихихи"></a></li>
+    <li><a href="/1.html">Сокращенная ссылка на внутренню страницу</a></li>
+    <li><a href="/index.html">Сокращенная ссылка на главную страницу</a></li>
+    <li><a href="#vniz">Ссылка на фрагмент</a></li>
+    <li><a href="https://kubsu.ru/?id=5834hufndlksja&page=555&name=name" target="_blank">Ссылка с 3мя параметрами</a> </li>
+    <li><a href="https://kubsu.ru/?id=5834hufndlksja" target="_blank">Ссылка с параметром id</a> </li>
+    <li><a href ="./1.html">Относительная ссылка в текущем катологе</a></li>
+    <li><a href="./about/2.html">В каталог about</a></li>
+    <li><a href="./papka1/3.html">Уровнем ниже текущего(выше будет на следуещей странице)</a></li>
+    <li><a href="papka1/papka2/4.html">Двумя уровнями выше текущего(аналогично)</a></li>
+    <li> Здесь будет текст для <a href="1.html">контекстной</a> ссылки</li>
+    <li><a href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет#Рейтинги">Ссылку на фрагмент страницы стороннего сайта</a></li>
+    <li>Ссылка в прямоугольной и круглой области
+
+        <img src="cat3.jpg" alt="hehe" usemap="#hehe" width="250" height="250">
+        <map name="hehe">
+            <area shape="circle" coords="50,62,20" href="https://youtu.be/gnzYZ_6RmgA?si=S_BL-namq4dIScEO" target="_blank" alt="a">
+            <area shape="rect" coords="100,100,150,150" href="https://youtu.be/JkDieSJRdyc?si=paftNYiFB63QWfHo" target="_blank" alt="b">
+        </map></li>
+    <li><a href="#!">Ссылка с пустым href</a></li>
+    <li><a>Ссылка без href</a></li>
+    <li>Ссылки в пронумерованном списке<ol>
+        <li><a href="./1.html" title="Первый">Ссылка в списке 1</a></li>
+        <li><a href="./papka1/3.html" title="Второй">Ссылка в списке 2</a></li>
+        <li><a href="./about/2.html" title="Третий">Ссылка в списке 3</a></li>
+    </ol></li>
+    <li><a href="papka1/3.html" rel="nofollow">Ссылка без доступа к поисковикам</a></li>
+    <li><a href="1.html" rel="noindex">Ссылка запрещенная для индексации поисковиками</a></li>
+    <li><a href="ftp://login:password@http://example.com/main.html/download/image.jpg">Cсылка на файл с авторизацией</a></li>
+</ul>
+    <table>
+        <caption>Таблица</caption>
+        <thead>
+        <tr>
+            <th scope="col">1 столбец</th>
+            <th scope="col">2 столбец</th>
+            <th scope="col">3 столбец</th>
+            <th scope="col">4 столбец</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="stroka">
+            <th scope="row">1 строка</th>
+            <td>хм</td>
+            <td>хммм</td>
+            <td>ХМММ</td>
+        </tr>
+        <tr>
+            <th scope="row">2 строка</th>
+            <td>хм</td>
+            <td>хммм</td>
+            <td>ХМММ</td>
+        </tr>
+        <tr class="stroka">
+            <th scope="row">3 строка</th>
+            <td>хм</td>
+            <td>хммм</td>
+            <td>ХМММ</td>
+        </tr>
+        <tr>
+            <a id="table"></a>
+            <th scope="row">4 строка</th>
+            <td>хм</td>
+            <td>хммм</td>
+            <td>ХМММ</td>
+        </tr>
+        <tr class="stroka">
+            <th scope="row">5 строка</th>
+            <td>хм</td>
+            <td>хммм</td>
+            <td>ХМММ</td>
+        </tr>
+        <tr>
+            <th scope="row">6 строка</th>
+            <td>хм</td>
+            <td>хммм</td>
+            <td>ХМММ</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr class="stroka">
+            <th scope="row" colspan="2">Итого</th>
+            <td colspan="2">чтож</td>
+        </tr>
+        </tfoot>
+    </table>
+
+<form method="post" action="./index.html" class="forms">
+    <label>
+        <br />
+        <input placeholder="ФИО" required/>
+    </label><br />
+    <label>
+        <input type="tel" placeholder="Телефон" required />
+    </label><br />
+    <label>
+        <input type="email" placeholder="e-mail" required/>
+    </label><br />
+    <label>
+        Дата рождения <br/>
+        <input type="date" required/>
+    </label><br />
+    <label>
+        <input name=sex type="radio" value="male" required/>
+        Мужской</label>
+    <label>
+        <input name=sex type="radio" value="female" required />
+        Женский</label> <br />
+    <label>
+        <a id="form"></a>
+        <br />
+        <select>
+            <option disabled>Любимый язык программирования</option>
+            <option value="Pascal">Pascal</option>
+            <option value="C" >C</option>
+            <option value="C++" >C++</option>
+            <option value="Prolog" >Prolog</option>
+            <option value="JavaScript" >JavaScript</option>
+            <option value="PHP" >PHP</option>
+            <option value="Python" >Python</option>
+            <option value="Java" >Java</option>
+            <option value="Haskel" >Haskel</option>
+            <option value="Clojure" >Clojure</option>
+            <option value="Prolog" >Prolog</option>
+            <option value="Scala" >Scala</option>
+        </select>
+    </label><br />
+    <label>
+        <textarea placeholder="Биография"></textarea>
+    </label><br />
+    <label>
+        С контрактом ознакомился
+        <input type="checkbox" required>
+    </label><br />
+    <input type="submit" value="Отправить" />
+</form>
+</main>
+<footer>
+    <a id="podval"></a>
+    <p>Преподаватель: Синица Сергей Геннадьевич</p><br>
+    <p>Студент: Мария Смирнова</p>
+    <a id="vniz"></a>
+</footer>
+</body>
+</html>
